@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personagem aleatório T20</title>
+    <link rel="stylesheet" href="estilo.css"> 
+</head>
+<body>
+    <div id="cabecalho">
+    <h1>TORMENTA 20</h1>
+    <h2>PERSONAGEM ALEATÓRIO</h2>
+    <h3>feito por kanerito13 (material de fã para fã, direitos de JamboEditora)</h3>
+    </div>
+
+     <div id="obv">
+        <h2>observações:</h2>
+        <ul>  
+            <li>apenas o conceito do personagem é gerado, os poderes e níveis são de escolha pessoal.</li>
+            <li>as origens regionais do atlas de arton estão includas no filtro de origens especiais.</li>
+            <li>chassis de golem(exceto o de ferro que é o base) e os suragell com herança dos deuses estão no filtro de raças variantes.</li>
+            <li>caso a devoção saia "nenhuma" com uma classe divina, use a versão "do panteão" ou semelhantes.</li>
+            <li>as origens especiais são as unicas que dizem de qual livro pertencem, pois é facil identificar de qual livro cada opção pertence lendo o sumário (os suragell com herança são do deuses de arton e as outras raças variantes são do ameaças)</li> 
+            <li>caso algum resultado não seja possivel por regra ou não combine, como um paladino de deus maligno, gere novamente ou escolha uma outra opção possível.</li>
+        </ul>
+     </div>
+
+    <div id="gerador">
+      <table id="secao">
+      <thead>
+        <tr>
+          <th>Raça</th>
+          <th>Classe</th>
+          <th>Origem</th>
+          <th>Devoção</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="resultado">
+          <td id="raça">-</td>
+          <td id="classe">-</td>
+          <td id="origem">-</td>
+          <td id="devoção">-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button onclick="criar()">Criar</button>
+    </div>
+
+    <div id="escolhas">
+        <h3>filtros:</h3>
+        <div id="filtros">
+                <label>
+                    <input type="checkbox" id="raçaV"> Incluir Raças Variantes 
+                </label>
+                <label>
+                    <input type="checkbox" id="classeV"> Incluir Classes Variantes
+                </label>
+                <label>
+                    <input type="checkbox" id="origemE"> Incluir Origens especiais
+                </label> 
+                <label>
+                    <input type="checkbox" id="deusesM"> Incluir Deuses Menores
+                </label> 
+        </div>
+        <br>
+    </div>
+
+</body>
+
+<script src="opcoes.js"></script>
+
+</html>
