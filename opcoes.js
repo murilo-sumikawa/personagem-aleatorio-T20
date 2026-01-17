@@ -30,11 +30,11 @@
       "Gwendolynn", "Mauziell", "Tibar", "A Espada-Deus", "Akok", "Altair", "Anilatir", "Apis", "Artaphan", "Ayllana", "Beluhga ", "Benthos", "Betsumial", "Blinar", "Caerdellach", "Canastra", "Canora", "Cette", "Champarr", "Dahriol", "Drumak", "Dunsark", "Elrophin", "Escamandra", "Esmeralda", "Garanaam", "Garth", "Goharom", "Granto", "Gratissa ", "Hippion", "Hurlaagh", "Hydora", "Inghlblhpholstgt", "Irione", "Jandra", "Klangor", "Kurur Lianth", "Laan", "Lamashtu", "Lupan", "Luvithy", "Marina", "Mzzileyn", "Nerelim", "Neruíte", "O Deus Cristal de Urielka", "O Deus das Cidades", "O Deus do Medo", "Piscigeros", "Rhond", "Sckhar", "Sunnary", "Tamagrah", "Teldiskan", "Tessalus", "Toris", "Tukala", "Ur", "Yasshara", "Zadbblein", "Zakharov"
     ];
 
-    function sortear(lista) {
+    const sortear = (lista) => {
       return lista[Math.floor(Math.random() * lista.length)];
     }
 
-    function criar() {
+    const criar = () => {
       const incluirRaçaV = document.getElementById("raçaV").checked;
       const incluirClasseV = document.getElementById("classeV").checked;
       const incluirDeusesM = document.getElementById("deusesM").checked;
